@@ -1,3 +1,10 @@
+.container{
+
+  margin: auto;
+  width: 400px;
+
+}
+
 .board {
     display:grid;
     grid-template-areas:
@@ -7,33 +14,37 @@
     ;
     /* margin: auto; */
     /* size: 70%; */
-    border: 2px solid black;
-  height: 410px;
-  width: 410px;
-  margin: 0 auto;
-  background-color: black;
+    /* border: 2px solid orange; */
+  height: 400px;
+  width: 400px;
+  /* margin: 0 auto; */
+  margin: 40px 0;
+  /* background-color: black; */
+  
 }
 
-.squares {
-      background-color: white;
-  height: 130px;
-  width: 130px;
-}
+
 
 #a {
   grid-area: a;
+ border-top: none;
+ border-left: none;
 }
 
 #b {
     grid-area: b;
+  border-top: none;
   }
 
 #c {
     grid-area: c;
+    border-right: none;
+    border-top:none
   }
 
   #d {
     grid-area: d;
+    border-left: none;
   }
 
   #e {
@@ -42,16 +53,29 @@
 
   #f {
     grid-area: f;
+    border-right: none;
   }
 
   #g {
     grid-area: g;
+    border-bottom: none;
+    border-left: none;
   }
 
   #h {
     grid-area: h;
+    border-bottom: none;
   }
 
   #i {
     grid-area: i;
+    border-bottom: none;
+    border-right: none;
   }
+
+  .squares {
+  /* background-color: white; */
+  border: 3px solid black;
+  height: 130px;
+  width: 130px;
+}
